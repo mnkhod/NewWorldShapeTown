@@ -1,0 +1,71 @@
+{
+    "id": "d8dc356c-86cf-4507-9edc-dbc8a481f4c0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 300,
+        "borderHeight": 90
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "6c8eda19-e759-4705-92ba-d223b1bb488e",
+            "label": "container_1",
+            "x": -0.04645841657811656,
+            "y": -0.002866411641057276,
+            "ArcadeComponent.active": true,
+            "allowGravity": false,
+            "body.width": 100,
+            "body.height": 89,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "582a10f5-0194-453b-8720-7074e81ff755",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "MessageBox3"
+                    },
+                    "x": 150,
+                    "y": 45,
+                    "scaleX": 0.35945619789439076,
+                    "scaleY": 0.35945619789439076
+                },
+                {
+                    "type": "Text",
+                    "id": "d4e44d73-c7e8-4f9a-a07c-4b1e8160e6a6",
+                    "label": "msg",
+                    "scope": "CLASS",
+                    "x": 150,
+                    "y": 45,
+                    "scaleX": 1.0077466928617544,
+                    "scaleY": 1.0077466928617544,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "New text",
+                    "fixedWidth": 200,
+                    "lineSpacing": 3,
+                    "align": "center",
+                    "fontFamily": "Little Malio 8-Bit",
+                    "fontSize": "20px",
+                    "color": "#000",
+                    "stroke": "#000",
+                    "maxLines": 3,
+                    "wordWrapWidth": 200,
+                    "wordWrapUseAdvanced": true
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

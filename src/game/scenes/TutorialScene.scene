@@ -1,0 +1,915 @@
+{
+    "id": "61b2af8d-97d7-4fb5-87a9-8613f40d584a",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 2560,
+        "snapHeight": 1600,
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "TutorialScene",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "TilemapLayer",
+            "id": "8f89fbd5-3f7b-47fe-8b2a-60541032d4a9",
+            "label": "map_environment_Background_Just_Render__1",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Map environment/Background[Just Render]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "f98344bf-89a4-4894-a73a-61beff22c1a3",
+            "label": "map_environment_Ground_just_render__1",
+            "scope": "CLASS",
+            "x": -767,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Map environment/Ground[just render]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "2eb60648-8ec8-44d9-a8d7-b57d25916d72",
+            "label": "map_environment_Road_Just_render__1",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Map environment/Road[Just render]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "a4cec5a7-1503-463c-abe8-895e4fe1613f",
+            "label": "layerFence",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Map environment/Fence[Make it collision]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "6987feb5-a46d-4254-b1c9-ce6c320e8624",
+            "label": "farmingAreaFarmingTile",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Farming Area/FarmingTile[Use SEED to grow crops]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "4156d1de-cfe4-4a83-9420-f58b43a46351",
+            "label": "layerFishingPondBorder",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "FishingPond/FishingPondBOrder[Make it Collision]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "ad0d5b8b-60ba-4f41-a1e3-834e5b97fdf6",
+            "label": "fishingPond_FishingPondWater_Anywhere_can_be_fishing_action_start__1",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "FishingPond/FishingPondWater[Anywhere can be fishing action start]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "2ce986e4-ae25-4c74-bc3e-186883024bac",
+            "label": "fishingPond_FishingPondAccessor__just_render__1",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "FishingPond/FishingPondAccessor[]just render]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "76275834-5e14-4c6f-a409-6feb1ecb6de5",
+            "label": "layerTreeBorder1",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Treeborder[Make it Collision]/TreeBorder",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "d5e602c3-ecf3-434f-a1e5-c0eaafb3e967",
+            "label": "layerTreeBorder",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Treeborder[Make it Collision]/TreeBorder1",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "62ec2896-1689-40af-8cd3-e9b05660c043",
+            "label": "layerTreeBorder2",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Treeborder[Make it Collision]/TreeBorder2",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "e4410027-bb48-4fd1-9510-35ea6957bf84",
+            "label": "layerHouseGround",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "House/HouseGround",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "dadc3d61-eef5-4217-8181-ef8e3a479013",
+            "label": "layerPine",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Tree/PineTree",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "4a1e1d57-8aef-49d9-89f8-aac1db45e66e",
+            "label": "farming_Area_Crops_Make_it_Collision_popup_to_not_able_to_HARVET__1",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Farming Area/Crops[Make it Collision/popup to not able to HARVET]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "aea84180-a239-445b-84eb-c1f72e1060bf",
+            "label": "farming_Area_DeadCrops_Make_it_Collision_Can_be_HARVEST_but_noting_drops__1",
+            "scope": "CLASS",
+            "x": -768,
+            "y": -416,
+            "tilemapId": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "layerName": "Farming Area/DeadCrops[Make it Collision/Can be HARVEST but noting drops]",
+            "tilesets": [
+                "GroundTileset",
+                "RoadStone",
+                "TreePatteren",
+                "GroundTilestSoil",
+                "GroundAccessor",
+                "LakeAccessor",
+                "Fishes_1_32x32gif",
+                "Fishes_2_32x32",
+                "Fishes_3_32x32",
+                "LakeFloatingRock_V02",
+                "LakeFloatingRock_V01",
+                "TutorliarNPCHouse",
+                "Apple",
+                "Tree_v014",
+                "Tree_v02",
+                "Tree_v04",
+                "Tree_v08",
+                "Tree_v09",
+                "FarmingCropsVer2",
+                "NPCOldManJack X2",
+                "LakeBorderCornerAni",
+                "LakeBorderAni"
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4194377c-240b-451b-9989-2402504b9b93",
+            "label": "mapLayers"
+        },
+        {
+            "type": "Sprite",
+            "id": "7ed5760b-00c9-4c38-a826-37efefcf402c",
+            "label": "sceneTile",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Fruitbushes_V01",
+                "frame": 23
+            },
+            "x": 1259,
+            "y": 382,
+            "scaleX": 1.3069946364802347,
+            "scaleY": 10.586085054631967,
+            "ArcadeComponent.active": true,
+            "allowGravity": false,
+            "body.width": 32,
+            "body.height": 200
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "bb438d94-f3d6-45c6-9e27-cfb7b8ac0647",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab",
+            "x": 207,
+            "y": 592
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "d9d60f36-8616-4c4b-8bcc-94a17484ff11",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_1",
+            "x": 239,
+            "y": 592
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "37012eb2-7b74-4cc9-b4f7-aed8c82fd3dc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_2",
+            "x": 271,
+            "y": 592
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "cc02962e-8d10-406a-8ac0-1bd56f1e216f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_3",
+            "x": 303,
+            "y": 592
+        },
+        {
+            "prefabId": "c5295ea5-b7f5-4391-9fc6-8c5495a42d18",
+            "id": "6b7332d5-ec40-4067-9de0-bd512037c349",
+            "unlock": [
+                "x",
+                "y",
+                "player",
+                "msgPrefab",
+                "itemHud",
+                "bookHud"
+            ],
+            "label": "oldManJackNpcPrefab",
+            "player": "playerPrefab",
+            "msgPrefab": "messagePrefab",
+            "itemHud": "itemHudPrefab",
+            "bookHud": "questBookPrefab",
+            "x": 361,
+            "y": 216
+        },
+        {
+            "prefabId": "69dcb358-e67d-4ee2-9f1e-98cc490b6341",
+            "id": "aff152d8-b681-4e28-9035-0ad873ee40d5",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "playerPrefab",
+            "scope": "CLASS",
+            "x": 353,
+            "y": 288
+        },
+        {
+            "prefabId": "37959980-4ccd-448d-8f07-35b88a563f7c",
+            "id": "36171080-6b9a-44b9-8133-c96009a25605",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "questBookPrefab",
+            "scope": "CLASS",
+            "x": 32,
+            "y": 736
+        },
+        {
+            "prefabId": "a69b4058-db0e-4e31-b023-568805698db8",
+            "id": "12c785bd-c529-4ec9-80f7-49dcb51467de",
+            "unlock": [
+                "x",
+                "y",
+                "player"
+            ],
+            "label": "itemHudPrefab",
+            "scope": "CLASS",
+            "player": "playerPrefab",
+            "x": 17.999990057997366,
+            "y": 714.0380149603411
+        },
+        {
+            "prefabId": "d8dc356c-86cf-4507-9edc-dbc8a481f4c0",
+            "id": "7b9adc16-f2ab-470c-9c10-934f5c83d56d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "messagePrefab",
+            "scope": "CLASS",
+            "x": 0.706304947792546,
+            "y": 0.8045771466410088
+        },
+        {
+            "prefabId": "f091d24d-337a-4363-a9ac-c2e296f13378",
+            "id": "e2aa5288-fa00-42cf-a9bf-c0c83bef2fc6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "alertPrefab",
+            "scope": "CLASS",
+            "x": 721.70328457044,
+            "y": 0.0215605880291605
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "1dbd4832-52cc-47c0-949b-a0e20ac55d5a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_4",
+            "x": 207,
+            "y": 560
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "bb580999-e7d7-469f-a7ca-ad79c6ed5ea6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_5",
+            "x": 239,
+            "y": 560
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "1dda7fb7-df95-4945-82e8-b59c4f507e19",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_6",
+            "x": 271,
+            "y": 560
+        },
+        {
+            "prefabId": "a1fa0a70-a3b6-4765-87c1-03960867693d",
+            "id": "0e70dfe2-ccad-4dce-abeb-3497da7eb3d3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "harvestPrefab_7",
+            "x": 303,
+            "y": 560
+        },
+        {
+            "prefabId": "3f334556-ed3f-4297-8ad8-f1c3aa42e40f",
+            "id": "a180088b-acc7-4597-ab04-9060c8b3f7da",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "appleTreePrefab",
+            "scope": "CLASS",
+            "x": 496,
+            "y": 156
+        },
+        {
+            "prefabId": "e8ee7ffb-4d21-409f-b18f-b1e396ab50a4",
+            "id": "1efdf54f-c2a5-4f4f-879a-5e2daf708647",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "pineTreePrefab",
+            "scope": "CLASS",
+            "x": 620,
+            "y": 342
+        },
+        {
+            "prefabId": "bf01c370-f9c3-479d-ad97-4d8de5dff081",
+            "id": "3a49c5c7-bbd2-4843-99db-9f748d5dbbe2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "mapleTreePrefab",
+            "scope": "CLASS",
+            "x": 162,
+            "y": 325
+        },
+        {
+            "prefabId": "539d9f3b-484a-4047-bc14-e5a464303a3e",
+            "id": "e16b75e7-e015-46c0-aba1-7b95de363a31",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "tutorealHousePrefab",
+            "scope": "CLASS",
+            "x": 256,
+            "y": 90
+        },
+        {
+            "prefabId": "bc8f70fc-832b-45aa-97fa-b71d8d26bbbc",
+            "id": "3be710dc-02cc-459b-8e90-23c807ffd365",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "deadTree2",
+            "scope": "CLASS",
+            "x": 540,
+            "y": 473
+        },
+        {
+            "type": "Sprite",
+            "id": "14874867-cac4-40e0-8cef-4808a04425ef",
+            "label": "fishingArea",
+            "scope": "CLASS",
+            "texture": {
+                "key": "LakeAccessor",
+                "frame": 0
+            },
+            "x": 852,
+            "y": 714
+        },
+        {
+            "prefabId": "49079006-fbcb-44e1-a048-2912c2954192",
+            "id": "f19f91ba-46f6-4a0d-b468-76f154bfa3e0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "fishingComponentPrefab",
+            "scope": "CLASS",
+            "x": 64,
+            "y": 640
+        },
+        {
+            "prefabId": "05640e95-1b2a-411d-bbb2-3af441962740",
+            "id": "a50bdf89-8de0-4d6f-8fd0-5b915923f09a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "profilePrefab",
+            "scope": "CLASS",
+            "x": 56.5,
+            "y": 23
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "33835dd0-37d1-4fc9-93a0-0be62142d471",
+            "type": "Tilemap",
+            "label": "TutorialMap",
+            "key": "TutorialMap",
+            "tilesets": [
+                {
+                    "name": "GroundTileset",
+                    "imageKey": "GroundTileset"
+                },
+                {
+                    "name": "RoadStone",
+                    "imageKey": "RoadStone"
+                },
+                {
+                    "name": "TreePatteren",
+                    "imageKey": "TreePatteren"
+                },
+                {
+                    "name": "GroundTilestSoil",
+                    "imageKey": "GroundTilestSoil"
+                },
+                {
+                    "name": "GroundAccessor",
+                    "imageKey": "GroundAccessor"
+                },
+                {
+                    "name": "LakeAccessor",
+                    "imageKey": "LakeAccessor"
+                },
+                {
+                    "name": "Fishes_1_32x32gif",
+                    "imageKey": "Fishes_1_32x32gif"
+                },
+                {
+                    "name": "Fishes_2_32x32",
+                    "imageKey": "Fishes_2_32x32"
+                },
+                {
+                    "name": "Fishes_3_32x32",
+                    "imageKey": "Fishes_3_32x32"
+                },
+                {
+                    "name": "LakeFloatingRock_V02",
+                    "imageKey": "LakeFloatingRock_V02"
+                },
+                {
+                    "name": "LakeFloatingRock_V01",
+                    "imageKey": "LakeFloatingRock_V01"
+                },
+                {
+                    "name": "TutorliarNPCHouse",
+                    "imageKey": "TutorliarNPCHouse"
+                },
+                {
+                    "name": "Apple",
+                    "imageKey": "Apple"
+                },
+                {
+                    "name": "Tree_v014",
+                    "imageKey": "Tree_v014"
+                },
+                {
+                    "name": "Tree_v02",
+                    "imageKey": "Tree_v02"
+                },
+                {
+                    "name": "Tree_v04",
+                    "imageKey": "Tree_v"
+                },
+                {
+                    "name": "Tree_v08",
+                    "imageKey": "Tree_v08"
+                },
+                {
+                    "name": "Tree_v09",
+                    "imageKey": "Tree_v09"
+                },
+                {
+                    "name": "FarmingCropsVer2",
+                    "imageKey": "FarmingCropsVer2"
+                },
+                {
+                    "name": "NPCOldManJack X2",
+                    "imageKey": "NPCOldManJack"
+                },
+                {
+                    "name": "LakeBorderCornerAni",
+                    "imageKey": "LakeBorderCornerAni"
+                },
+                {
+                    "name": "LakeBorderAni",
+                    "imageKey": "LakeBorderAni"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

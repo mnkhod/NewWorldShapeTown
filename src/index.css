@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .scrollbar-hidden {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+}
+@font-face {
+    font-family: 'Little Malio 8-Bit';
+    src: url('fonts/Little Malio 8-Bit.otf') format('truetype');
+    font-display: swap;
+}
+
+* {
+  @apply cursor-default;
+}
