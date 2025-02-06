@@ -1,4 +1,3 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
@@ -24,7 +23,7 @@ export default class AlertPrefab extends Phaser.GameObjects.Container {
 		const msg = scene.add.text(150.81828568909967, 47.456869152431125, "", {});
 		msg.setOrigin(0.5, 0.5);
 		msg.text = "New text";
-		msg.setStyle({ "align": "center", "fixedWidth": 250, "fontSize": "12px", "maxLines": 3 });
+		msg.setStyle({ "align": "center", "fixedWidth": 250, "maxLines": 3, "stroke": "#ffffffff" });
 		msg.setLineSpacing(3);
 		msg.setWordWrapWidth(250, true);
 		this.add(msg);
@@ -40,19 +39,23 @@ export default class AlertPrefab extends Phaser.GameObjects.Container {
 		this.exitButton = exitButton;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
-		this.visible = false
+        // Write your code here.
+        this.visible = false;
 
+        exitButton.setInteractive({ useHandCursor: true });
+        exitButton.on("pointerdown", () => this.hide(), this);
+        exitButton.on(
+            "pointerover",
+            () => exitButton.preFX.addGlow(16777215, 4, 0, false),
+            this
+        );
+        exitButton.on("pointerout", () => exitButton.preFX.clear(), this);
 
-		exitButton.setInteractive({ useHandCursor: true })
-		exitButton.on('pointerdown', () => this.hide(),this)
-		exitButton.on('pointerover', () => exitButton.preFX.addGlow(16777215, 4, 0, false),this);
-		exitButton.on('pointerout', () => exitButton.preFX.clear(),this);
+        this.scene.events.on("update", this.onSceneUpdate, this);
 
-		this.scene.events.on('update', this.onSceneUpdate, this);
-
-		this.setScale(0.5)
-		/* END-USER-CTR-CODE */
+        this.setScale(0.55);
+        exitButton.setScale(0.6);
+        /* END-USER-CTR-CODE */
 	}
 
 	/** @type {Phaser.GameObjects.Image} */
@@ -64,72 +67,72 @@ export default class AlertPrefab extends Phaser.GameObjects.Container {
 
 	/* START-USER-CODE */
 
-	// Write your code here.
+    // Write your code here.
 
-	onSceneUpdate(){
-		if(this.visible){
-			const cam = this.scene.cameras.main;
+    onSceneUpdate() {
+        if (this.visible) {
+            const cam = this.scene.cameras.main;
 
-			let fullWidth = Math.floor(this.getBounds().width)
-			let fullHeight = Math.floor(this.getBounds().height)
+            let fullWidth = Math.floor(this.getBounds().width);
+            let fullHeight = Math.floor(this.getBounds().height);
 
-			let newX = cam.worldView.right - fullWidth - 5
-			let newY = cam.worldView.top + 10
+            let newX = cam.worldView.right - fullWidth - 5;
+            let newY = cam.worldView.top + 10;
 
-			this.setPosition(
-				Phaser.Math.Linear(this.x, newX, 1),
-				Phaser.Math.Linear(this.y, newY, 1),
-			);
-		}
-	}
+            this.setPosition(
+                Phaser.Math.Linear(this.x, newX, 1),
+                Phaser.Math.Linear(this.y, newY, 1)
+            );
+        }
+    }
 
+    alert(msg = "demo") {
+        this.fadeInAnim();
 
-	alert(msg = "demo"){
-		this.fadeInAnim()
+        this.msg.text = msg;
 
-		this.msg.text = msg;
+        // this.scene.time.delayedCall(5000, () => {
+        // 	if(this.visible == true) this.fadeOutAnim()
+        // },{}, this);
+    }
 
-		// this.scene.time.delayedCall(5000, () => {
-		// 	if(this.visible == true) this.fadeOutAnim()
-		// },{}, this);
-	}
+    hide() {
+        this.fadeOutAnim();
+    }
 
-	hide(){
-		this.fadeOutAnim()
-	}
+    fadeOutAnim() {
+        this.scene.tweens.add({
+            targets: this,
+            alpha: { start: 1, to: 0 },
+            ease: "Linear", // 'Cubic', 'Elastic', 'Bounce', 'Back'
+            duration: 500,
+            repeat: 0, // -1: infinity
+            yoyo: false,
+            onComplete: () => {
+                this.visible = false;
+                this.apha = 1;
+            },
+        });
+    }
 
-	fadeOutAnim(){
-		this.scene.tweens.add({
-			targets: this,
-			alpha: { start: 1, to: 0 },
-			ease: 'Linear',       // 'Cubic', 'Elastic', 'Bounce', 'Back'
-			duration: 500,
-			repeat: 0,            // -1: infinity
-			yoyo: false,
-			onComplete: () => {
-				this.visible = false
-				this.apha = 1
-			},
-		});		
-	}
+    fadeInAnim() {
+        this.visible = true;
+        this.alpha = 0;
 
-	fadeInAnim(){
-		this.visible = true
-		this.alpha = 0;
+        this.scene.tweens.add({
+            targets: this,
+            alpha: { start: 0, to: 1 },
+            ease: "Linear", // 'Cubic', 'Elastic', 'Bounce', 'Back'
+            duration: 500,
+            repeat: 0, // -1: infinity
+            yoyo: false,
+        });
+    }
 
-		this.scene.tweens.add({
-			targets: this,
-			alpha: { start: 0, to: 1 },
-			ease: 'Linear',       // 'Cubic', 'Elastic', 'Bounce', 'Back'
-			duration: 500,
-			repeat: 0,            // -1: infinity
-			yoyo: false,
-		});		
-	}
-
-	/* END-USER-CODE */
+    /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
 
 // You can write more code here
+

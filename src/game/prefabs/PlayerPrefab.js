@@ -110,14 +110,62 @@ export default class PlayerPrefab extends Phaser.GameObjects.Container {
                     x: parseInt((this.mouseMovePosition.x - this.player.x) / 2),
                     y: parseInt((this.mouseMovePosition.y - this.player.y) / 2),
                 };
+
+                let line = new Phaser.Geom.Line(
+                    this.player.x,
+                    this.player.y,
+                    this.mouseMovePosition.x,
+                    this.mouseMovePosition.y
+                );
+                let angle = Phaser.Math.Angle.Between(
+                    this.player.x,
+                    this.player.y,
+                    this.mouseMovePosition.x,
+                    this.mouseMovePosition.y
+                );
+
+                let graphics = this.scene.add.graphics({
+                    lineStyle: {
+                        width: 4,
+                        color: 0xff0000, // Red color
+                        alpha: 1, // Fully opaque
+                    },
+                });
+
+                graphics.strokeLineShape(line);
+
+                let direction = this.determineDirectionFromAngle(angle);
+
+                console.log(direction);
+
+                this.scene.tweens.add({
+                    targets: this.player,
+                    x: this.mouseMovePosition.x,
+                    y: this.mouseMovePosition.y,
+                    duration: 1000,
+                    repeat: 0,
+                    onStart: () => {
+                        this.playAnimations(direction);
+                    },
+                    onComplete: () => {
+                        this.playAnimations("IdleDown");
+                    },
+                });
             },
             this
         );
     }
 
     prefabUpdateCycle() {
+        if (this.isMouseMove) return;
+
         this.playerMovement();
-        this.playerMouseMovement();
+        // this.playerMouseMovement();
+
+        if (this.isMouseMove) {
+            // this.player.body.velocity.x = 50;
+            // this.player.body.velocity.y = 50;
+        }
     }
 
     playerMovement() {
@@ -160,9 +208,11 @@ export default class PlayerPrefab extends Phaser.GameObjects.Container {
 
             if (
                 this.mouseMovePosition.x - parseInt(this.player.body.x) >= 0 &&
-                this.mouseMovePosition.x - parseInt(this.player.body.x) <= distance &&
+                this.mouseMovePosition.x - parseInt(this.player.body.x) <=
+                    distance &&
                 this.mouseMovePosition.y - parseInt(this.player.body.y) >= 0 &&
-                this.mouseMovePosition.y - parseInt(this.player.body.y) <= distance
+                this.mouseMovePosition.y - parseInt(this.player.body.y) <=
+                    distance
             ) {
                 this.isMouseMove = false;
                 this.playAnimations("IdleDown");
@@ -347,6 +397,26 @@ export default class PlayerPrefab extends Phaser.GameObjects.Container {
 
     capitalizeFirstLetter(val) {
         return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+    }
+
+    determineDirectionFromAngle(angle) {
+        // Convert angle to degrees and normalize to 0-360
+        let degrees = Phaser.Math.RadToDeg(angle);
+        degrees = (degrees + 360) % 360;
+
+        // Determine direction based on angle
+        let direction;
+        if (degrees >= 315 || degrees < 45) {
+            direction = "Right";
+        } else if (degrees >= 45 && degrees < 135) {
+            direction = "Down";
+        } else if (degrees >= 135 && degrees < 225) {
+            direction = "Left";
+        } else {
+            direction = "Up";
+        }
+
+        return direction;
     }
     /* END-USER-CODE */
 }

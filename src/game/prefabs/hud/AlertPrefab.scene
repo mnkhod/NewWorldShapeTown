@@ -46,7 +46,7 @@
                     "fixedWidth": 250,
                     "lineSpacing": 3,
                     "align": "center",
-                    "fontSize": "12px",
+                    "stroke": "#ffffffff",
                     "maxLines": 3,
                     "wordWrapWidth": 250,
                     "wordWrapUseAdvanced": true
